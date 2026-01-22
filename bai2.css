@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: gray;
+}
+
+.container{
+    max-width: 320px;
+    margin: 20px auto;
+    background-color: white;
+    line-height: 1.5;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.above{
+    min-height: 120px;
+    background: linear-gradient(135deg, #667EEA, #764BA2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+}
+
+.above p{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 14px;
+}
+
+.above h1{
+    font-size: 40px;
+}
+
+
+.content{
+    padding: 16px;
+}
+
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.code{
+    color:#667EEA;
+    background-color: #e3e6ff;
+    border-radius: 5px;
+    padding: 2px 6px;
+    font-size: 13px;
+}
+
+.top i{
+    color: gold;
+}
+
+
+.text{
+    opacity: 0.7;
+    margin: 8px 0 12px;
+    font-size: 14px;
+}
+
+
+.between{
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.7;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.between i{
+    color: rgba(0,0,0,0.4);
+}
+
+
+hr{
+    border: none;
+    height: 1px;
+    background-color: #eee;
+    margin-bottom: 12px;
+}
+
+
+.last{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.last p{
+    color: #667EEA;
+    font-weight: bold;
+}
+
+button{
+    background-color: #667EEA;
+    color: white;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 13px;
+    
+}
+@media (max-width: 480px) {
+    body{
+        padding: 10px;
+    }
+
+    .container{
+        max-width: 100%;
+        margin: 10px auto;
+    }
+
+    .above{
+        min-height: 100px;
+    }
+
+    .above h1{
+        font-size: 36px;
+    }
+
+    .top{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .between{
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .last{
+        flex-direction: column;
+        gap: 10px;
+        align-items: stretch;
+    }
+
+    button{
+        width: 100%;
+        padding: 10px;
+        font-size: 15px;
+    }
+}
